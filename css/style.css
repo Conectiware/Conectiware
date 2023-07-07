@@ -1969,9 +1969,11 @@ font-family: "Libre Baskerville", serif;
 .team {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   padding: 100px 0;
   background: #dbe4e4;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 .team * {
   -webkit-transition: 0.25s ease-in-out;
@@ -1982,17 +1984,18 @@ font-family: "Libre Baskerville", serif;
 }
 .team ul {
   width: 100%;
-  float: left;
+  /* float: left; */
   margin: 0;
   padding: 0;
 }
 .team ul li {
-  width: 20%;
-  float: left;
+  width: 30%;
+  /* float: left; */
   margin: 0;
   padding: 0;
   list-style: none;
   border-right: 1px solid #dbe4e4;
+  margin-left: 10px;
 }
 .team ul li:hover {
   transform: translateY(-40px);
@@ -2002,6 +2005,7 @@ font-family: "Libre Baskerville", serif;
 }
 .team ul li:last-child {
   border-right: 0;
+  margin-top: 40px;
 }
 .team ul li:nth-child(2) {
   margin-top: 40px;
@@ -2017,7 +2021,8 @@ font-family: "Libre Baskerville", serif;
 }
 .team ul li figure img {
   width: 100%;
-  float: left;
+  /* float: left; */
+  border-radius: 10px 10px 0px 0px;
 }
 .team ul li figure figcaption {
   width: 100%;
@@ -2460,6 +2465,12 @@ font-family: "Libre Baskerville", serif;
   color: #fff;
   font-size: 12px;
 }
+.fleximum{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
@@ -2543,7 +2554,6 @@ font-family: "Libre Baskerville", serif;
   }
 
   .team ul li {
-    width: 33.33333%;
     border-top: 1px solid #dbe4e4;
   }
 
@@ -2554,7 +2564,6 @@ font-family: "Libre Baskerville", serif;
   .team ul li:nth-child(4) {
     margin-top: 0;
   }
-
   .services-content-block .content-box h4 {
     font-size: 22px;
   }
@@ -2723,7 +2732,7 @@ font-family: "Libre Baskerville", serif;
   }
 
   .team ul li {
-    width: 100%;
+    width: 60%;
     margin-bottom: 40px;
   }
 
@@ -2802,6 +2811,21 @@ font-family: "Libre Baskerville", serif;
     margin-left: 0;
     margin-right: 10px;
   }
+}
+.lien{
+  color: #eee;
+  text-decoration: none;
+}
+.titre{
+  color: #f34a38;
+  text-align: center;
+  font-family: 'Lexend';
+}
+.text{
+  color: black;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */
